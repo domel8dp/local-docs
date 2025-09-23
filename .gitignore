@@ -1,0 +1,7 @@
+.cache
+.venv
+.vscode
+site
+docs/dpawlak/*
+docs/pidbang/*
+docs/sbs/*

@@ -1,0 +1,36 @@
+site_name: Local Documentation
+site_url: http://localhost:2212
+copyright: Copyright &copy; Dominik Pawlak
+theme:
+  name: material
+  icon:
+    logo: material/nut
+  features:
+    - navigation.expand
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+  palette:
+    primary: indigo
+    accent: black
+markdown_extensions:
+  # tabs
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  # code highlights
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+    # - pymdownx.superfences
+  # admonitions
+  - admonition
+  - pymdownx.details
+    # - pymdownx.superfences
+plugins:
+  - privacy
+extra_css:
+  - stylesheets/width.css
