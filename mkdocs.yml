@@ -15,7 +15,13 @@ theme:
     accent: black
 markdown_extensions:
   # tabs
-  - pymdownx.superfences
+  # - pymdownx.superfences
+  # tabs & mermaid
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   # code highlights
